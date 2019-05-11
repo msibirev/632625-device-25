@@ -6,7 +6,116 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <!-- Шапка страницы -->
+    <header>
+      <!--Логотип-->
+      <span class="site-logo"><a>device</a></span>
+
+      <!--Скрытый заголовок-->
+      <h1 class="visually-hidden">Интернет магазин "Девайс"</h1>
+
+      <!--Форма поиска-->
+      <form class="site-search">
+        <input class="search-field" type="search" placeholder="Поиск по сайту">
+      </form>
+
+      <!--Навигация основной страницы-->
+      <nav class="site-navigation">
+        <!-- FIXME: переосмыслить верстку навигации с позиции группировки элементов-->
+
+        <span class="nav-login">
+          <a href="#">Войти</a>
+        </span>
+
+        <ul class="shop-information">
+          <li>
+            <a href="#">Сравнить</a>
+          </li>
+
+          <li>
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+
+        <span class="nav-catalog">
+          <a href="#">Каталог товаров</a>
+        </span>
+
+        <ul class="order-information">
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+        </ul>
+
+        <span class="nav-contacts">
+          <a href="#">Контакты</a>
+        </span>
+
+      </nav>
+
+    </header>
+
+    <!-- Основная часть страницы -->
+    <main>
+
+      <!--Секция: О нас-->
+      <section class="about-us">
+
+        <h2>О нас</h2>
+
+        <p>
+          Огромный выбор гаджетов не оставит равнодушным гика,
+          который есть в каждом из нас.
+        </p>
+
+        <p>
+          Мы можем доставить ваш товар в самые отдаленные точки
+          России! DEVICE работает со многими транспортными компаниями.
+        </p>
+
+        <ul class="couriers">
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+
+        <button class="about-us-button" type="button">Подробнее о нас</button>
+
+      </section>
+
+      <!--Секция: Контакты-->
+      <section class="contacts">
+
+        <h2>Контакты</h2>
+
+        <p>
+          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+          проверить работоспособность покупки. Всякое бывает.
+        </p>
+
+        <!-- TODO: здесь должна быть интерактивная карта -->
+
+        <button class="contacts-button" type="button">Напишите нам</button>
+
+      </section>
+
+    </main>
+
+    <!-- Подвал страницы -->
+    <footer>
+
+      <!--Логотип-->
+      <span class="footer-logo">device</span>
+
+      <!--Подвальная навигация-->
+      <nav class="footer-navigation"></nav>
+      <!--FIXME: Переосмыслить подвальную навигацию, а именно группировку элементов-->
+
+    </footer>
 
   </body>
 </html>

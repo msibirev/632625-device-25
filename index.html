@@ -1,155 +1,159 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <!-- Шапка страницы -->
-    <header>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
+
+<body>
+
+  <!-- Шапка страницы -->
+  <header>
+    <!--Логотип-->
+    <a class="logo">device</a>
+    <!--Скрытый заголовок-->
+    <h1 class="visually-hidden">Интернет магазин "Девайс"</h1>
+    <!--Форма поиска-->
+    <form class="search">
+      <input class="search-field" type="search" placeholder="Поиск по сайту">
+    </form>
+    <!--Навигация основной страницы-->
+    <nav class="site-navigation">
+      <!--Верхняя навигация-->
+      <ul class="first-list">
+        <li class="login">
+          <a href="#">Войти</a>
+        </li>
+
+        <li class="compare">
+          <a href="#">Сравнить</a>
+        </li>
+
+        <li class="trash">
+          <a href="#">Корзина</a>
+        </li>
+      </ul>
+      <!--Нижняя навигация-->
+      <ul class="second-list">
+        <li class="catalog">
+          <a href="#">Каталог товаров</a>
+        </li>
+
+        <li class="delivery">
+          <a href="#">Доставка</a>
+        </li>
+
+        <li class="guarantee">
+          <a href="#">Гарантия</a>
+        </li>
+
+        <li class="contacts">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Основная часть страницы -->
+  <main>
+
+    <!--Секция: О нас-->
+    <section class="about-us">
+      <!--Заголовок секции-->
+      <h2>О нас</h2>
+      <!--Первый параграф в секции-->
+      <p>
+        Огромный выбор гаджетов не оставит равнодушным гика,
+        который есть в каждом из нас.
+      </p>
+      <!--Второй параграф в секции-->
+      <p>
+        Мы можем доставить ваш товар в самые отдаленные точки
+        России! DEVICE работает со многими транспортными компаниями.
+      </p>
+      <!--Список служб доставки-->
+      <ul class="couriers">
+        <li>Деловые Линии</li>
+        <li>Автотрейдинг</li>
+        <li>ЖелДорЭкспедиция</li>
+      </ul>
+      <!--Кнопка дополнительной информации-->
+      <button class="about-us-button" type="button">Подробнее о нас</button>
+    </section>
+
+    <!--Секция: Контакты-->
+    <section class="contacts">
+      <!--Заголовок секции-->
+      <h2>Контакты</h2>
+      <!--Параграфи секции-->
+      <p>
+        Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+        проверить работоспособность покупки. Всякое бывает.
+      </p>
+
+      <!-- TODO: здесь должна быть интерактивная карта -->
+
+      <!--Кнопка обратной связи-->
+      <button class="contacts-button" type="button">Напишите нам</button>
+    </section>
+
+  </main>
+
+  <!-- Подвал страницы -->
+  <footer>
+    <!--Логотип-->
+    <span class="footer-logo">device</span>
+    <!--Подвальная навигация-->
+    <nav class="footer-navigation">
       <!--Логотип-->
       <a class="logo">device</a>
-      <!--Скрытый заголовок-->
-      <h1 class="visually-hidden">Интернет магазин "Девайс"</h1>
-      <!--Форма поиска-->
-      <form class="search">
-        <input class="search-field" type="search" placeholder="Поиск по сайту">
-      </form>
-      <!--Навигация основной страницы-->
-      <nav class="site-navigation">
-        <!--Верхняя навигация-->
-        <ul class="first-list">
-          <li class="login">
-            <a href="#">Войти</a>
-          </li>
+      <!--Верхняя навигация-->
+      <ul class="first-list first-list-footer">
+        <li class="login footer-login">
+          <a href="#">Войти</a>
+        </li>
 
-          <li class="compare">
-            <a href="#">Сравнить</a>
-          </li>
+        <li class="compare footer-compare">
+          <a href="#">Сравнить</a>
+        </li>
 
-          <li class="trash">
-            <a href="#">Корзина</a>
-          </li>
-        </ul>
-        <!--Нижняя навигация-->
-        <ul class="second-list">
-          <li class="catalog">
-            <a href="#">Каталог товаров</a>
-          </li>
+        <li class="trash footer-trash">
+          <a href="#">Корзина</a>
+        </li>
+      </ul>
+      <!--Адрес-->
+      <p class="address">г. Москва, ул. Строителей, 15</p>
+      <!--Нижняя навигация-->
+      <ul class="second-list second-list-footer">
+        <li class="delivery footer-delivery">
+          <a href="#">Доставка</a>
+        </li>
 
-          <li class="delivery">
-            <a href="#">Доставка</a>
-          </li>
+        <li class="guarantee footer-guatantee">
+          <a href="#">Гарантия</a>
+        </li>
 
-          <li class="guarantee">
-            <a href="#">Гарантия</a>
-          </li>
+        <li class="contacts footer-contacts">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <!--Номер телефона-->
+      <p class="tel-number">Тел.: <tel>+7 (495) 495-95-95</tel>
+      </p>
+      <!--Иконки социальных сетей-->
+      <ul class="socials-list">
+        <li class="fb-icon"></li>
+        <li class="inst-icon"></li>
+        <li class="twitter-icon"></li>
+      </ul>
+      <!--Иконка Академии-->
+      <ul class="htmlacademy-icon">
+        <li></li>
+      </ul>
+    </nav>
+  </footer>
 
-          <li class="contacts">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+</body>
 
-    <!-- Основная часть страницы -->
-    <main>
-
-      <!--Секция: О нас-->
-      <section class="about-us">
-        <!--Заголовок секции-->
-        <h2>О нас</h2>
-        <!--Первый параграф в секции-->
-        <p>
-          Огромный выбор гаджетов не оставит равнодушным гика,
-          который есть в каждом из нас.
-        </p>
-        <!--Второй параграф в секции-->
-        <p>
-          Мы можем доставить ваш товар в самые отдаленные точки
-          России! DEVICE работает со многими транспортными компаниями.
-        </p>
-        <!--Список служб доставки-->
-        <ul class="couriers">
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <!--Кнопка дополнительной информации-->
-        <button class="about-us-button" type="button">Подробнее о нас</button>
-      </section>
-
-      <!--Секция: Контакты-->
-      <section class="contacts">
-        <!--Заголовок секции-->
-        <h2>Контакты</h2>
-        <!--Параграфи секции-->
-        <p>
-          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
-          проверить работоспособность покупки. Всякое бывает.
-        </p>
-
-        <!-- TODO: здесь должна быть интерактивная карта -->
-
-        <!--Кнопка обратной связи-->
-        <button class="contacts-button" type="button">Напишите нам</button>
-      </section>
-
-    </main>
-
-    <!-- Подвал страницы -->
-    <footer>
-      <!--Логотип-->
-      <span class="footer-logo">device</span>
-      <!--Подвальная навигация-->
-      <nav class="footer-navigation">
-        <!--Логотип-->
-        <a class="logo">device</a>
-        <!--Верхняя навигация-->
-        <ul class="first-list first-list-footer">
-          <li class="login footer-login">
-            <a href="#">Войти</a>
-          </li>
-
-          <li class="compare footer-compare">
-            <a href="#">Сравнить</a>
-          </li>
-
-          <li class="trash footer-trash">
-            <a href="#">Корзина</a>
-          </li>
-        </ul>
-        <!--Адрес-->
-        <p class="address">г. Москва, ул. Строителей, 15</p>
-        <!--Нижняя навигация-->
-        <ul class="second-list second-list-footer">
-          <li class="delivery footer-delivery">
-            <a href="#">Доставка</a>
-          </li>
-
-          <li class="guarantee footer-guatantee">
-            <a href="#">Гарантия</a>
-          </li>
-
-          <li class="contacts footer-contacts">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-        <!--Номер телефона-->
-        <p class="tel-number">Тел.: <tel>+7 (495) 495-95-95</tel></p>
-        <!--Иконки социальных сетей-->
-        <ul class="socials-list">
-          <li class="fb-icon"></li>
-          <li class="inst-icon"></li>
-          <li class="twitter-icon"></li>
-        </ul>
-        <!--Иконка Академии-->
-        <ul class="htmlacademy-icon">
-          <li></li>
-        </ul>
-      </nav>
-    </footer>
-
-  </body>
 </html>

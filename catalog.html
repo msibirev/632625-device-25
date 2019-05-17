@@ -1,243 +1,250 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <!-- Шапка страницы -->
-    <header>
-        <!--Логотип-->
-        <a class="logo">device</a>
-        <!--Скрытый заголовок-->
-        <h1 class="visually-hidden">Интернет магазин "Девайс"</h1>
-        <!--Форма поиска-->
-        <form class="search">
-          <input class="search-field" type="search" placeholder="Поиск по сайту">
-        </form>
-        <!--Навигация основной страницы-->
-        <nav class="site-navigation">
-          <!--Верхняя навигация-->
-          <ul class="first-list">
-            <li class="login">
-              <a href="#">Войти</a>
-            </li>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
 
-            <li class="compare">
-              <a href="#">Сравнить</a>
-            </li>
+<body>
 
-            <li class="trash">
-              <a href="#">Корзина</a>
-            </li>
-          </ul>
-          <!--Нижняя навигация-->
-          <ul class="second-list">
-            <li class="catalog">
-              <a href="#">Каталог товаров</a>
-            </li>
+  <!-- Шапка страницы -->
+  <header>
+    <!--Логотип-->
+    <a class="logo">device</a>
+    <!--Скрытый заголовок-->
+    <h1 class="visually-hidden">Интернет магазин "Девайс"</h1>
+    <!--Форма поиска-->
+    <form class="search">
+      <input class="search-field" type="search" placeholder="Поиск по сайту">
+    </form>
+    <!--Навигация основной страницы-->
+    <nav class="site-navigation">
+      <!--Верхняя навигация-->
+      <ul class="first-list">
+        <li class="login">
+          <a href="#">Войти</a>
+        </li>
 
-            <li class="delivery">
-              <a href="#">Доставка</a>
-            </li>
+        <li class="compare">
+          <a href="#">Сравнить</a>
+        </li>
 
-            <li class="guarantee">
-              <a href="#">Гарантия</a>
-            </li>
+        <li class="trash">
+          <a href="#">Корзина</a>
+        </li>
+      </ul>
+      <!--Нижняя навигация-->
+      <ul class="second-list">
+        <li class="catalog">
+          <a href="#">Каталог товаров</a>
+        </li>
 
-            <li class="contacts">
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+        <li class="delivery">
+          <a href="#">Доставка</a>
+        </li>
 
-    <main>
+        <li class="guarantee">
+          <a href="#">Гарантия</a>
+        </li>
 
-      <section class="pagination">
-        <!--Заголовок секции-->
-        <h2 class="pagination-title">Моноподы для селфи</h2>
-        <!--Список переходов по страницам-->
-      </section>
+        <li class="contacts">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-      <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
+  <main>
 
-        <form method="get" class="filters-form" name="filters">
+    <section class="pagination">
+      <!--Заголовок секции-->
+      <h2 class="pagination-title">Моноподы для селфи</h2>
+      <!--Список переходов по страницам-->
+    </section>
 
-          <fieldset class="filter-item filter-price">
-            <legend class="grid-title">
-                <span>Стоимость</span>
-              </legend>
+    <section class="filters">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
 
-              <div class="range-filter">
+      <form method="get" class="filters-form" name="filters">
 
-                <div class="range-controls">
+        <fieldset class="filter-item filter-price">
+          <legend class="grid-title">
+            <span>Стоимость</span>
+          </legend>
 
-                  <div class="scale">
+          <div class="range-filter">
 
-                    <div class="bar"></div>
+            <div class="range-controls">
 
-                  </div>
+              <div class="scale">
 
-                  <div class="toggle toggle-min"></div>
-
-                  <div class="toggle toggle-max"></div>
-
-                </div>
-
-                <div class="price-controls">
-                  <label class="min-price">от
-                    <input name="min-price" type="number" value="0">
-                  </label>
-                  <label class="max-price">до
-                    <input name="max-price" type="number" value="5000">
-                  </label>
-                </div>
+                <div class="bar"></div>
 
               </div>
-            </fieldset>
 
-            <fieldset class="filter-item">
-                <legend class="color-title">
-                  <span>Цвет</span>
-                </legend>
+              <div class="toggle toggle-min"></div>
 
-                <ul class="features-list">
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-option" id="black" value="black-selected"
-                      checked>
-                    <label for="black">Черный</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-option" id="white"
-                      value="white-selected">
-                    <label for="white">Белый</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-option" id="blue" value="blue-selected"
-                      checked>
-                    <label for="blue">Синий</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-option" id="red" value="red-selected" checked>
-                    <label for="red">Красный</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-option" id="pink" value="pink-selected">
-                    <label for="pink">Розовый</label>
-                  </li>
-                </ul>
-              </fieldset>
+              <div class="toggle toggle-max"></div>
 
-            <fieldset class="filter-item">
-                <legend class="bluetooth-title">
-                  <span>Bluetooth</span>
-                </legend>
+            </div>
 
-                <ul class="bluetooth-list">
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-option" id="yes" value="yes-selected"
-                      checked>
-                    <label for="yes">Есть</label>
-                  </li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-option" id="no" value="no-selected">
-                    <label for="no">Нет</label>
-                  </li>
-                </ul>
-              </fieldset>
+            <div class="price-controls">
+              <label class="min-price">от
+                <input name="min-price" type="number" value="0">
+              </label>
+              <label class="max-price">до
+                <input name="max-price" type="number" value="5000">
+              </label>
+            </div>
 
-              <button type="submit" class="button show-button">Показать</button>
-          </form>
-        </section>
+          </div>
+        </fieldset>
 
-        <section class="products">
-          <!--Заголовок секции-->
-          <h2 class="visually-hidden">Товары магазина</h2>
-          <!--Список товаров-->
-          <ul class="products-list">
-            <li class="products-item">
-              <img src="http://placehold.it/150x100" alt="Изображение товара">
-              <p class="products-title">Любительская селфи-палка</p>
-              <p class="products-price">500 р.</p>
+        <fieldset class="filter-item">
+          <legend class="color-title">
+            <span>Цвет</span>
+          </legend>
+
+          <ul class="features-list">
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-option"
+                id="black" value="black-selected" checked>
+              <label for="black">Черный</label>
             </li>
-
-            <li class="products-item">
-              <img src="http://placehold.it/150x100" alt="Изображение товара">
-              <p class="products-title">Профессиональная селфи-палка</p>
-              <p class="products-price">1 500 р.</p>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-option"
+                id="white" value="white-selected">
+              <label for="white">Белый</label>
             </li>
-
-            <li class="products-item">
-              <img src="http://placehold.it/150x100" alt="Изображение товара">
-              <p class="products-title">Непотопляемая селфи-палка</p>
-              <p class="products-price">2 500 р.</p>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-option"
+                id="blue" value="blue-selected" checked>
+              <label for="blue">Синий</label>
             </li>
-
-            <li class="products-item">
-              <img src="http://placehold.it/150x100" alt="Изображение товара">
-              <p class="products-title">Селфи-палка «Следуй за мной»</p>
-              <p class="products-price">4 900 р.</p>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-option"
+                id="red" value="red-selected" checked>
+              <label for="red">Красный</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="color-option"
+                id="pink" value="pink-selected">
+              <label for="pink">Розовый</label>
             </li>
           </ul>
-        </section>
+        </fieldset>
 
-    </main>
+        <fieldset class="filter-item">
+          <legend class="bluetooth-title">
+            <span>Bluetooth</span>
+          </legend>
 
-    <!-- Подвал страницы -->
-    <footer>
-        <!--Логотип-->
-        <span class="footer-logo">device</span>
-        <!--Подвальная навигация-->
-        <nav class="footer-navigation">
-          <!--Логотип-->
-          <a class="logo">device</a>
-          <!--Верхняя навигация-->
-          <ul class="first-list first-list-footer">
-            <li class="login footer-login">
-              <a href="#">Войти</a>
+          <ul class="bluetooth-list">
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-option" id="yes"
+                value="yes-selected" checked>
+              <label for="yes">Есть</label>
             </li>
-
-            <li class="compare footer-compare">
-              <a href="#">Сравнить</a>
-            </li>
-
-            <li class="trash footer-trash">
-              <a href="#">Корзина</a>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid-option" id="no"
+                value="no-selected">
+              <label for="no">Нет</label>
             </li>
           </ul>
-          <!--Адрес-->
-          <p class="address">г. Москва, ул. Строителей, 15</p>
-          <!--Нижняя навигация-->
-          <ul class="second-list second-list-footer">
-            <li class="delivery footer-delivery">
-              <a href="#">Доставка</a>
-            </li>
+        </fieldset>
 
-            <li class="guarantee footer-guatantee">
-              <a href="#">Гарантия</a>
-            </li>
+        <button type="submit" class="button show-button">Показать</button>
+      </form>
+    </section>
 
-            <li class="contacts footer-contacts">
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-          <!--Номер телефона-->
-          <p class="tel-number">Тел.: <tel>+7 (495) 495-95-95</tel></p>
-          <!--Иконки социальных сетей-->
-          <ul class="socials-list">
-            <li class="fb-icon"></li>
-            <li class="inst-icon"></li>
-            <li class="twitter-icon"></li>
-          </ul>
-          <!--Иконка Академии-->
-          <ul class="htmlacademy-icon">
-            <li></li>
-          </ul>
-        </nav>
-      </footer>
+    <section class="products">
+      <!--Заголовок секции-->
+      <h2 class="visually-hidden">Товары магазина</h2>
+      <!--Список товаров-->
+      <ul class="products-list">
+        <li class="products-item">
+          <img src="http://placehold.it/150x100" alt="Изображение товара">
+          <p class="products-title">Любительская селфи-палка</p>
+          <p class="products-price">500 р.</p>
+        </li>
 
-  </body>
+        <li class="products-item">
+          <img src="http://placehold.it/150x100" alt="Изображение товара">
+          <p class="products-title">Профессиональная селфи-палка</p>
+          <p class="products-price">1 500 р.</p>
+        </li>
+
+        <li class="products-item">
+          <img src="http://placehold.it/150x100" alt="Изображение товара">
+          <p class="products-title">Непотопляемая селфи-палка</p>
+          <p class="products-price">2 500 р.</p>
+        </li>
+
+        <li class="products-item">
+          <img src="http://placehold.it/150x100" alt="Изображение товара">
+          <p class="products-title">Селфи-палка «Следуй за мной»</p>
+          <p class="products-price">4 900 р.</p>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Подвал страницы -->
+  <footer>
+    <!--Логотип-->
+    <span class="footer-logo">device</span>
+    <!--Подвальная навигация-->
+    <nav class="footer-navigation">
+      <!--Логотип-->
+      <a class="logo">device</a>
+      <!--Верхняя навигация-->
+      <ul class="first-list first-list-footer">
+        <li class="login footer-login">
+          <a href="#">Войти</a>
+        </li>
+
+        <li class="compare footer-compare">
+          <a href="#">Сравнить</a>
+        </li>
+
+        <li class="trash footer-trash">
+          <a href="#">Корзина</a>
+        </li>
+      </ul>
+      <!--Адрес-->
+      <p class="address">г. Москва, ул. Строителей, 15</p>
+      <!--Нижняя навигация-->
+      <ul class="second-list second-list-footer">
+        <li class="delivery footer-delivery">
+          <a href="#">Доставка</a>
+        </li>
+
+        <li class="guarantee footer-guatantee">
+          <a href="#">Гарантия</a>
+        </li>
+
+        <li class="contacts footer-contacts">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <!--Номер телефона-->
+      <p class="tel-number">Тел.: <tel>+7 (495) 495-95-95</tel>
+      </p>
+      <!--Иконки социальных сетей-->
+      <ul class="socials-list">
+        <li class="fb-icon"></li>
+        <li class="inst-icon"></li>
+        <li class="twitter-icon"></li>
+      </ul>
+      <!--Иконка Академии-->
+      <ul class="htmlacademy-icon">
+        <li></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+
 </html>

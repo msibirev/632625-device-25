@@ -57,10 +57,20 @@
 
   <main>
 
-    <section class="pagination">
+    <section class="inner-title">
       <!--Заголовок секции-->
-      <h2 class="pagination-title">Моноподы для селфи</h2>
-      <!--Список переходов по страницам-->
+      <h2>Моноподы для селфи</h2>
+      <ul class="inner-list">
+        <li class="inner-item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="inner-item">
+          <a href="#">Каталог товаров</a>
+        </li>
+        <li class="inner-item">
+          <a href="#">Моноподы для селфи</a>
+        </li>
+      </ul>
     </section>
 
     <section class="filters">
@@ -154,13 +164,43 @@
           </ul>
         </fieldset>
 
-        <button type="submit" class="button show-button">Показать</button>
+        <button class="button show-button" type="submit">Показать</button>
       </form>
     </section>
 
     <section class="products">
       <!--Заголовок секции-->
       <h2 class="visually-hidden">Товары магазина</h2>
+      <div class="products-sort">
+        <h3 class="products-title">Сортировка:</h3>
+        <ul class="sort-list">
+          <li class="sort-item">
+            <a href="#" class="sort-item-current">По цене</a>
+          </li>
+
+          <li class="sort-item">
+            <a href="#" class="sort-item">По типу</a>
+          </li>
+
+          <li class="sort-item">
+            <a href="#" class="uppercase">По популярности</a>
+          </li>
+        </ul>
+
+        <div class="up-down-sort">
+          <a href="#" class="up-icon" aria-label="Сортировка по возрастанию">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path fill="#000000" d="M5.5 0L0 10h11z" />
+            </svg>
+          </a>
+
+          <a href="#" class="down-icon sort-current" aria-label="Сортировка по убыванию">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path fill="#000000" d="M5.5 10L0 0h11" />
+            </svg>
+          </a>
+        </div>
+      </div>
       <!--Список товаров-->
       <ul class="products-list">
         <li class="products-item">
@@ -185,6 +225,27 @@
           <img src="http://placehold.it/150x100" alt="Изображение товара">
           <p class="products-title">Селфи-палка «Следуй за мной»</p>
           <p class="products-price">4 900 р.</p>
+        </li>
+      </ul>
+
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-backward">
+          <a href="#" aria-label="Предыдущая страницы">Назад</a>
+        </li>
+        <li class="pagination-item-current">
+          <a href="#" aria-label="Первая страница">1</a>
+        </li>
+
+        <li class="pagination-item">
+          <a href="#" aria-label="Вторая страница">2</a>
+        </li>
+
+        <li class="pagination-item">
+          <a href="#" aria-label="Третья страница">3</a>
+        </li>
+
+        <li class="pagination-item pagination-next">
+          <a href="#" aria-label="Следующая страница">Вперед</a>
         </li>
       </ul>
     </section>

@@ -11,7 +11,9 @@
   <!-- Шапка страницы -->
   <header>
     <!--Логотип-->
-    <a class="logo">device</a>
+    <a class="logo">
+      <img src="img/svg/logo-device.svg" alt="Логотип магазина" width="163" height="35">
+    </a>
     <!--Скрытый заголовок-->
     <h1 class="visually-hidden">Интернет магазин "Девайс"</h1>
     <!--Форма поиска-->
@@ -38,6 +40,22 @@
       <ul class="second-list">
         <li class="catalog">
           <a href="catalog.html">Каталог товаров</a>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <a href="#">Виртуальная реальность</a>
+              <a href="catalog.html">Моноподы для селфи</a>
+              <a href="#">Экшн-камеры</a>
+            </li>
+
+            <li class="catalog-item">
+              <a href="#">Фитнес-браслеты</a>
+              <a href="#">Умные часы</a>
+            </li>
+
+            <li class="catalog-item">
+              <a href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
         </li>
 
         <li class="delivery">
@@ -188,32 +206,32 @@
     </section>
 
     <!--Секция: Партнеры-->
-    <section class="partners">
+    <section class="brands">
       <!--Скрытый заголовок секции-->
-      <h2 class="visually-hidden">Наши партнеры</h2>
-      <!--Список партнеров-->
-      <ul class="partners-list">
-        <li class="partners-item">
+      <h2 class="visually-hidden">Бренды товаров</h2>
+      <!--Список брендов-->
+      <ul class="brands-list">
+        <li class="brands-item">
           <a href="#">
-            <img src="" alt="">
+            <img src="img/logo-dji.png" alt="Логотип компании dji" width="260" height="100">
           </a>
         </li>
 
-        <li class="partners-item">
+        <li class="brands-item">
           <a href="#">
-            <img src="" alt="">
+            <img src="img/logo-spg.png" alt="Логотип компании SP Gadgets" width="260" height="100">
           </a>
         </li>
 
-        <li class="partners-item">
+        <li class="brands-item">
           <a href="#">
-            <img src="" alt="">
+            <img src="img/logo-gp.png" alt="Логотип компании GoPro" width="260" height="100">
           </a>
         </li>
 
-        <li class="partners-item">
+        <li class="brands-item">
           <a href="#">
-            <img src="" alt="">
+            <img src="img/logo-vive.png" alt="Логотип компании Vive" width="260" height="100">
           </a>
         </li>
       </ul>
@@ -253,7 +271,10 @@
         проверить работоспособность покупки. Всякое бывает.
       </p>
 
-      <!-- TODO: здесь должна быть интерактивная карта -->
+      <a class="map" href="#" aria-label="Карта с нашим адресом: ул. Строителей, д. 15">
+        <!--FIXME: Поменять на интерактивную карту-->
+        <img src="img/map.jpg" alt="Карта с нашим местоположением" width="560" height="222">
+      </a>
 
       <!--Кнопка обратной связи-->
       <button class="contacts-button button" type="button">Напишите нам</button>
@@ -287,7 +308,10 @@
     <!--Подвальная навигация-->
     <nav class="footer-navigation">
       <!--Логотип-->
-      <a class="logo">device</a>
+      <a class="logo" href="#">
+        <img src="img/svg/logo-device.svg" alt="Логотип магазина возвращающий в начало страницы" width="163"
+          height="35">
+      </a>
       <!--Верхняя навигация-->
       <ul class="first-list first-list-footer">
         <li class="login footer-login">
@@ -319,17 +343,26 @@
         </li>
       </ul>
       <!--Номер телефона-->
-      <p class="tel-number">Тел.: <tel>+7 (495) 495-95-95</tel>
-      </p>
+      <a class="tel-number" href="tel:+7 (495) 495-95-95">Тел.: +7 (495) 495-95-95</a>
       <!--Иконки социальных сетей-->
       <ul class="socials-list">
-        <li class="socials-icon"><a class="fb-icon" href="#">Facebook</a></li>
-        <li class="socials-icon"><a class="inst-icon" href="#">Instagram</a></li>
-        <li class="socials-icon"><a class="twitter-icon" href="#">Twitter</a></li>
+        <li class="socials-icon">
+          <a class="fb-icon" href="#" aria-label="Мы в Фейсбуке"></a>
+        </li>
+
+        <li class="socials-icon">
+          <a class="inst-icon" href="#" aria-label="Мы в Инстаграме"></a>
+        </li>
+
+        <li class="socials-icon">
+          <a class="twitter-icon" href="#" aria-label="Мы в Твиттере"></a>
+        </li>
       </ul>
       <!--Иконка Академии-->
       <ul class="htmlacademy-icon">
-        <li></li>
+        <li>
+          <a href="#" aria-label="Сайт HTML Academy"></a>
+        </li>
       </ul>
     </nav>
   </footer>
